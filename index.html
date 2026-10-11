@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебная страница Юрия Ильчука: языковой энтузиаст и переводчик. Лабораторная работа №1, вариант 17.">
+  <title>О себе — Юрий Ильчук</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <nav class="navigation" aria-label="Основная навигация">
+      <a class="wordmark" href="#about">Юрий Ильчук<span> / группа 932403</span></a>
+      <div class="nav-links">
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Написать мне</a>
+      </div>
+    </nav>
+    <div class="intro" id="about">
+      <div>
+        <p class="eyebrow">Языковой энтузиаст и переводчик</p>
+        <h1>О себе<span>Юрий Ильчук</span></h1>
+        <p class="intro-text">Языки открывают новые точки зрения. Эта страница посвящена переводу, изучению языков и общению между культурами.</p>
+        <a class="button" href="#projects">Посмотреть проекты <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="portrait">
+        <img src="images/avatar.svg" alt="Иллюстрированный аватар языкового энтузиаста с книгой" width="320" height="320">
+        <figcaption>Hello · Привет · こんにちは</figcaption>
+      </figure>
+    </div>
+  </header>
+
+  <main class="content-layout">
+    <div class="main-column">
+      <p class="demo-note">Учебное портфолио: навыки, проекты и выбранный язык ниже приведены как примеры для варианта 17.</p>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <p class="eyebrow">01 / Что я развиваю</p>
+        <h2 id="skills-title">Навыки</h2>
+        <ul class="skills-list">
+          <li><strong>Перевод текстов</strong><span>Передача смысла, тона и культурного контекста оригинала.</span></li>
+          <li><strong>Изучение языков</strong><span>Работа со словарём, грамматикой и произношением.</span></li>
+          <li><strong>Межкультурная коммуникация</strong><span>Уважение к традициям и особенностям общения.</span></li>
+          <li><strong>Редактирование</strong><span>Проверка ясности, точности и естественности перевода.</span></li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <p class="eyebrow">02 / От слов к практике</p>
+        <h2 id="projects-title">Проекты</h2>
+        <p class="section-description">Идеи учебных языковых проектов.</p>
+        <ol class="projects-list">
+          <li><h3>Перевод коротких рассказов</h3><p>Подборка переводов с английского на русский с комментариями о выборе выражений.</p><span class="tag">Перевод</span></li>
+          <li><h3>Мини-курс «Язык для путешествий»</h3><p>Уроки с полезными фразами для знакомства, поездок и повседневного общения.</p><span class="tag">Языковой курс</span></li>
+          <li><h3>Подкаст «Между языками»</h3><p>Короткие выпуски о непереводимых словах, идиомах и культурных различиях.</p><span class="tag">Подкаст</span></li>
+          <li><h3>Двуязычный словарь</h3><p>Тематический глоссарий с примерами употребления и заметками для запоминания.</p><span class="tag">Словарь</span></li>
+        </ol>
+      </section>
+
+      <div class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">03 / Давайте общаться</p>
+        <h2 id="contact-title">Обратная связь</h2>
+        <p id="form-help">Учебная форма: данные никуда не отправляются.</p>
+        <form id="contact-form" aria-describedby="form-help">
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required maxlength="100">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required maxlength="254">
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Сообщение</label>
+            <textarea id="message" name="message" placeholder="О каком языке или проекте хотите поговорить?" rows="5" required maxlength="3000"></textarea>
+          </div>
+          <button class="button" type="submit">Отправить сообщение <span aria-hidden="true">↗</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          <noscript><p>Для демонстрации отправки включите JavaScript. Форма не подключена к серверу.</p></noscript>
+        </form>
+      </div>
+    </div>
+
+    <aside aria-labelledby="language-title">
+      <p class="eyebrow">Следующая остановка</p>
+      <p class="japanese" lang="ja" aria-hidden="true">あ</p>
+      <h2 id="language-title">Японский язык</h2>
+      <p class="aside-subtitle">Язык, который хочется выучить</p>
+      <p>В этом учебном примере цель — читать рассказы в оригинале и знакомиться с культурой Японии через её язык.</p>
+      <h3>План знакомства</h3>
+      <ul>
+        <li>Освоить хирагану и катакану.</li>
+        <li>Выучить повседневные выражения.</li>
+        <li>Слушать короткие диалоги.</li>
+      </ul>
+      <a href="https://www.nhk.or.jp/lesson/" target="_blank" rel="noopener noreferrer">Уроки японского от NHK <span aria-hidden="true">↗</span></a>
+      <p class="aside-note">Учебный пример выбранного языка.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2026 Юрий Ильчук</p>
+    <p>Лабораторная работа №1 · Вариант 17 · Группа 932403</p>
+    <a href="https://github.com/iiqq2">Мой GitHub <span aria-hidden="true">↗</span></a>
+  </footer>
+</body>
+</html>
