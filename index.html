@@ -22,26 +22,26 @@
       <div>
         <p class="eyebrow">Языковой энтузиаст и переводчик</p>
         <h1>О себе<span>Юрий Ильчук</span></h1>
-        <p class="intro-text">Языки открывают новые точки зрения. Эта страница посвящена переводу, изучению языков и общению между культурами.</p>
+        <p class="intro-text">Языки открывают новые точки зрения. Эта страница посвящена переводу, изучению английского и общению между культурами.</p>
         <a class="button" href="#projects">Посмотреть проекты <span aria-hidden="true">↗</span></a>
       </div>
       <figure class="portrait">
         <img src="images/avatar.svg" alt="Иллюстрированный аватар языкового энтузиаста с книгой" width="320" height="320">
-        <figcaption>Hello · Привет · こんにちは</figcaption>
+        <figcaption>Английский · Перевод · Практика</figcaption>
       </figure>
     </div>
   </header>
 
   <main class="content-layout">
     <div class="main-column">
-      <p class="demo-note">Учебное портфолио: навыки, проекты и выбранный язык ниже приведены как примеры для варианта 17.</p>
+      <p class="profile-note">Английский в практике: перевод, работа с AI и инструменты для изучения языка.</p>
 
       <section id="skills" aria-labelledby="skills-title">
         <p class="eyebrow">01 / Что я развиваю</p>
         <h2 id="skills-title">Навыки</h2>
         <ul class="skills-list">
           <li><strong>Перевод текстов</strong><span>Передача смысла, тона и культурного контекста оригинала.</span></li>
-          <li><strong>Изучение языков</strong><span>Работа со словарём, грамматикой и произношением.</span></li>
+          <li><strong>Изучение английского</strong><span>Работа со словарём, грамматикой и произношением.</span></li>
           <li><strong>Межкультурная коммуникация</strong><span>Уважение к традициям и особенностям общения.</span></li>
           <li><strong>Редактирование</strong><span>Проверка ясности, точности и естественности перевода.</span></li>
         </ul>
@@ -50,13 +50,17 @@
       <section id="projects" aria-labelledby="projects-title">
         <p class="eyebrow">02 / От слов к практике</p>
         <h2 id="projects-title">Проекты</h2>
-        <p class="section-description">Идеи учебных языковых проектов.</p>
+        <p class="section-description">Перевод, искусственный интеллект и обучение английскому.</p>
         <ol class="projects-list">
-          <li><h3>Перевод коротких рассказов</h3><p>Подборка переводов с английского на русский с комментариями о выборе выражений.</p><span class="tag">Перевод</span></li>
-          <li><h3>Мини-курс «Язык для путешествий»</h3><p>Уроки с полезными фразами для знакомства, поездок и повседневного общения.</p><span class="tag">Языковой курс</span></li>
-          <li><h3>Подкаст «Между языками»</h3><p>Короткие выпуски о непереводимых словах, идиомах и культурных различиях.</p><span class="tag">Подкаст</span></li>
-          <li><h3>Двуязычный словарь</h3><p>Тематический глоссарий с примерами употребления и заметками для запоминания.</p><span class="tag">Словарь</span></li>
+          <li><h3>Перевод подкастов YouTube-канала Ruri Ohama</h3><p>Составление переводов подкастов с английского на русский с сохранением смысла и контекста.</p><span class="tag">Перевод подкастов</span></li>
+          <li><h3>Улучшение и тренировка AI-перевода в Yandex Translate</h3><p>Работа над качеством автоматического перевода: анализ результатов и разбор неточных формулировок.</p><span class="tag">AI-перевод</span></li>
+          <li><h3>Разметка для модели проекта EngCLI</h3><p>Разметка данных для локальной модели, которая определяет уровень английского и помогает подбирать учебный материал.</p><span class="tag">Разметка данных</span></li>
         </ol>
+        <div class="project-detail" aria-labelledby="engcli-title">
+          <p class="eyebrow">Подробнее о проекте</p>
+          <h3 id="engcli-title">Как работает EngCLI</h3>
+          <p>EngCLI — приложение, работающее в терминале. С помощью локальной модели оно определяет уровень вашего английского. Вы передаёте приложению ссылку на ролик на YouTube, а оно создаёт и сохраняет карточки Anki по содержанию видео — только те, которые релевантны вашему уровню английского.</p>
+        </div>
       </section>
 
       <div class="contact" id="contact" aria-labelledby="contact-title">
@@ -76,7 +80,7 @@
           </div>
           <div class="field">
             <label for="message">Сообщение</label>
-            <textarea id="message" name="message" placeholder="О каком языке или проекте хотите поговорить?" rows="5" required maxlength="3000"></textarea>
+            <textarea id="message" name="message" placeholder="Какой проект хотите обсудить?" rows="5" required maxlength="3000"></textarea>
           </div>
           <button class="button" type="submit">Отправить сообщение <span aria-hidden="true">↗</span></button>
           <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
@@ -86,19 +90,18 @@
     </div>
 
     <aside aria-labelledby="language-title">
-      <p class="eyebrow">Следующая остановка</p>
-      <p class="japanese" lang="ja" aria-hidden="true">あ</p>
-      <h2 id="language-title">Японский язык</h2>
-      <p class="aside-subtitle">Язык, который хочется выучить</p>
-      <p>В этом учебном примере цель — читать рассказы в оригинале и знакомиться с культурой Японии через её язык.</p>
-      <h3>План знакомства</h3>
+      <p class="eyebrow">Язык, который изучаю</p>
+      <p class="language-badge" lang="en" aria-hidden="true">EN</p>
+      <h2 id="language-title">Английский язык</h2>
+      <p class="aside-subtitle">От понимания к практике</p>
+      <p>Английский объединяет мои проекты: переводы подкастов, работу с AI-переводом и создание учебных карточек в EngCLI.</p>
+      <h3>Что развиваю</h3>
       <ul>
-        <li>Освоить хирагану и катакану.</li>
-        <li>Выучить повседневные выражения.</li>
-        <li>Слушать короткие диалоги.</li>
+        <li>Понимание речи в видео и подкастах.</li>
+        <li>Словарный запас и устойчивые выражения.</li>
+        <li>Точность и естественность перевода.</li>
       </ul>
-      <a href="https://www.nhk.or.jp/lesson/" target="_blank" rel="noopener noreferrer">Уроки японского от NHK <span aria-hidden="true">↗</span></a>
-      <p class="aside-note">Учебный пример выбранного языка.</p>
+      <a href="#engcli-title">Подробнее об EngCLI <span aria-hidden="true">↗</span></a>
     </aside>
   </main>
 
